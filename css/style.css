@@ -1,0 +1,821 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/********************************* Var *********************************/
+
+:root{
+    font-size: 100%;
+    --font-Sizer: 290%;
+    --font-Sizer2: calc(--font-Sizer * 2em);
+    --Radius-primary: 3em;
+    --Cercle-Radius-primary:50em;
+    --color-primary: #d7d5f8;
+    --color-span-primary: orange;
+
+
+}
+
+.color {
+    color: violet;
+    font-weight: bold;
+    font-size: 9em;
+}
+
+/********************************* Général *********************************/
+/********************************* level 01 *********************************/
+
+a, h2, p{
+    text-decoration: none;
+    font-size: var(--font-Sizer);
+    color: black;
+    margin: 0.3em 0;
+}
+
+h1{
+    font-size: var(--font-Sizer);
+    margin: 1em 0;
+}
+
+h2{
+    font-size: 9em;
+    line-height: 1em;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+footer{
+
+    background-color: black;
+    color: #d7d5f8;
+}
+
+input{
+    margin: 1em;
+    height: 6em;
+    border-radius: 3em;
+    border: none;
+    padding: 1em;
+}
+
+.inputItem{
+    height: 20em;
+}
+
+/* .footerElement:nth-last-child(-n+1) {
+    background-color: lime;
+}*/
+
+
+
+/********************************* end Général *********************************/
+
+
+/********************************* Général *********************************/
+/********************************* level 02 *********************************/
+
+article h1{
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    left: 27%;
+    top: 12%;
+    font-size: var(--font-Sizer);
+    color: white;
+}
+
+article h1{
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    left: 27%;
+    top: 12%;
+    font-size: var(--font-Sizer);
+    color: white;
+}
+
+img + img {
+    margin: 2em;
+}
+
+.containerImg{
+    display: flex;
+    justify-content: center;
+    height: 70em;
+}
+
+article + .violet {
+    margin-top: -2em;
+    height: 64em;
+}
+
+div> span{
+    border-radius: var(--Radius-primary);
+    padding: 0.5em 0.7em;
+    background-color: var(--color-span-primary);
+    color: white;
+   /* margin: 2em;*/
+    text-align: center;
+    font-size: 2em;
+    width: 7em;
+}
+
+/********************************* end-Général-Lv2 *********************************/
+
+.dFlexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containerBager{
+    display: flex;
+    align-items: center;
+}
+
+.bgOne{
+    background-image: url("../assets/img/forestprogress.png");
+    background-size: cover;
+}
+
+.bgOne> img{
+    filter: drop-shadow(0 -20mm 4mm rgba(72, 80, 80, 0.3));
+}
+
+.HeroText{
+    font-size: 9em;
+}
+
+.floating{
+    position: absolute;
+    width: 22VW;
+    height: 31VW;
+    left: 40%;
+    top: 5%;
+
+    object-fit: cover;
+    animation: slideTopAnim 1s ease 0s ;
+    transform: rotate(0.5turn);
+
+}
+
+.d-flex{
+    display: flex;
+}
+
+/********************************* elements Violet *********************************/
+
+.violet{
+    background-color: var(--color-primary);
+   /* height: 74em;*/
+    padding: 10em 3em;
+    height: 170vw;
+}
+
+.violet > div{
+    width: 100%;
+
+}
+
+.relativeBox{
+    height: 118vw;
+    position: relative;
+    top: 5em;
+
+}
+
+.cardViolet{
+    border-radius: var(--Radius-primary);
+    margin: 0 2em;
+    background-color: #6C5BF9;
+    padding: 5em;
+    width: 57em;
+}
+
+.cardViolet>p{
+    color: white;
+    line-height: 1.5em;
+}
+
+.marginLeft{
+    margin: 0 2em;
+}
+/********************************* end-elements-Violet *********************************/
+
+
+
+/********************************* Cards *********************************/
+.card{
+    border-radius: var(--Radius-primary);
+    margin: 1em 0 1em;
+}
+
+.longCard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6em 0 3em;
+    padding: 1em;
+}
+
+.longCard > img{
+    height: 30em;
+}
+/********************************* end-Card *********************************/
+
+.imgOne{
+     animation: FlanAnim 2s ease 1s 1 normal forwards;
+ }
+
+.igloo{
+    justify-content: space-evenly
+}
+
+.igloo > img{
+    width: 25em;
+    margin: 1em;
+}
+
+.limiter{
+    /*height: 94vw;*/
+    margin-bottom:18em ;
+    min-height: 40vw;
+}
+
+.hello{
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.helloOne{
+    margin-top: 1em;
+   /* padding: 1em;*/
+    height: 78em;
+}
+
+.helloTow{
+    margin: 30em auto 1em;
+    padding: 4em 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pinsBok{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    margin-top: 2em;
+    justify-content: flex-start;
+}
+
+.pinsBok a{
+    color: white;
+}
+
+.pins{
+    border-radius: var(--Cercle-Radius-primary);
+    width: 7em;
+    height: 7em;
+
+}
+
+.wrapper{
+     display: flex;
+     flex-wrap: wrap;
+    align-items: center;
+ }
+
+.little{
+    margin: 2.5em 0;
+    background-color: var(--color-primary);
+    padding: 3em;
+    min-height: 54em;
+    border-radius: var(--Radius-primary);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.object{
+    width: 100%;
+}
+
+.forms{
+    justify-content: space-around;
+}
+
+.longCardGrid {
+    /* padding: 8em 1.5em; */
+    margin-top: 136vw;
+}
+
+.cardHeader{
+    height: 5em;
+    padding: 10em 0 0em;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    justify-content: flex-start;
+}
+
+.longCardGrid p{
+    text-align: center;
+   /* margin-top: 1em;*/
+}
+
+.little> div> a{
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+}
+
+.scroller{
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    /*justify-content: space-around;*/
+   /* align-content: center;*/
+    position: relative;
+}
+
+.middlebox{
+    background-color: var(--color-primary);
+    padding: 32em 3em 5em 3em;
+    background-size: 50%;
+    position: relative;
+    top: -19em;
+    z-index: -1;
+
+}
+
+.bigGuy{
+    font-size: 9vw;
+    margin: 0.6em 0;
+    line-height: 0vw;
+    color: var(--color-primary);
+}
+
+.date{
+
+    display: grid;
+    grid-template: 150px / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-area: 3;
+    gap: 1vw;
+
+}
+
+.bgMontain{
+    background-image: url("../assets/img/daarkMontain.jpg");
+    background-size: cover;
+
+}
+
+.footerElement{
+    width: 100%;
+    padding-top: 8em;
+    text-align: left;
+
+}
+
+.footerElement > p{
+    color: #d7d5f8;
+
+}
+
+.footercontainer{
+    width: 100%;
+}
+
+/* .footerElement:nth-last-child(-n+1) {
+    background-color: lime;
+}*/
+
+.texteWite > h2{
+    color: white;
+}
+
+.texteWite > a{
+    color: white;
+}
+
+.texteWite > p{
+    color: white;
+}
+
+.btnPrimary{
+    background-color: #C1F495;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 14em;
+    width: 10em;
+    text-align: center;
+
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.preTitle{
+
+    font-weight: bolder;
+}
+
+.posTitle{
+    font-weight: lighter;
+    margin-bottom: 4em;
+}
+
+.spaceAround{
+    justify-content: space-around;
+}
+
+.minFooterElements{
+    min-width: 35em;;
+}
+
+.timer{
+    font-size: 6em;
+    color: white;
+}
+
+.timerSection{
+    align-items: center;
+}
+
+.timerInfoContainer{
+    width: 100%;
+    padding: 1em;
+}
+
+.timerName{
+    justify-content: space-between;
+    max-width: 72em;
+}
+
+.timerInfo{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.spaceBtwen{
+
+    justify-content: space-between;
+}
+
+.spacer{
+    margin-top: 4em;
+}
+
+.distFooter{
+    margin-top: 90vw;
+}
+
+.textCardHeader{
+  font-size:20em;
+    line-height: 0;
+    color: #d7d5f8;
+}
+
+
+/********************************* Media-Desktop *********************************/
+
+
+@media screen and (min-width: 1024px){
+
+    :root{
+        font-size: 40%;
+        --font-Sizer: 200%;
+        --font-Sizer2: calc(--font-Sizer * 2em);
+        --Radius-primary: 3em;
+        --Cercle-Radius-primary:50em;
+        --color-primary: #d7d5f8;
+        --color-span-primary: orange;
+    }
+
+    .violet{
+        width: 80vw;
+        padding: 10em 3em;
+        height: 100em;
+    }
+
+    .violet > div {
+        width: 35%;
+        margin: 0 17vw;
+    }
+
+    .violet >img {
+        height: 75em;
+        width: 40vw;
+        position: absolute;
+        top: 14em;
+        left: 55vw;
+    }
+
+    .HeroText{
+        font-size: 8vw;
+        line-height: 8vw;
+        margin-top: 2.2em;
+    }
+
+    .pictElement {
+        height: 47em;
+        width: 40vw;
+        position: absolute;
+        top: 14em;
+        left: 47vw;
+    }
+
+    .containerImg{
+        height: 135em;
+    }
+
+    .spacerTow{
+        height:100em
+    }
+
+   .little {
+       min-height: 0;
+       width: 80%;
+       display: flex;
+       padding: 0;
+       margin: 0;
+       align-content: center;
+   }
+
+    .longCard {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em 6%;
+        padding: 1em;
+        align-items: stretch;
+        height: 20em;
+        justify-content: space-evenly;
+    }
+
+    .longCard > img {
+        /*width: 36%;
+        height: 30em;*/
+        width: 19%;
+        height: 100%;
+    }
+
+    .longCardGrid {
+        padding: 8em 0.5vw;
+        margin: 8vw auto;
+        text-align: center;
+    }
+
+    .card {
+        border-radius: var(--Radius-primary);
+        margin: 0;
+    }
+
+    .cardViolet{
+        min-width: 28vw;
+        width: 45em;
+        display: flex;
+        border-radius: var(--Radius-primary);
+        background-color: #6C5BF9;
+        padding: 4em;
+        min-height: 63em;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .limiter {
+        min-height: 35vw;
+        margin: -2vw 0 3vw;
+    }
+
+    .middlebox:hover{
+        background-color: var(--color-primary);
+        padding: 9vw 10vw 10vw 22vw;
+        background-size: 60%;
+        background-position-x: -70em;
+        position: absolute;
+        left: 30%;
+        z-index: -1;
+        top: -4vw;
+    }
+
+    .scroller{
+        width: 40%;
+        overflow: initial;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        transition: width 2s;
+    }
+
+    .scroller:hover{
+        width: 100%;
+    }
+
+    .scroller:hover + .middlebox > div {
+        animation: ghost 2s ease 0s 1 normal forwards;
+    }
+
+    .scroller + .middlebox > div {
+        animation: ghostRevenant  3s ease 0s 1 normal forwards;
+    }
+
+    .container{
+        display: flex;
+
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+    }
+
+    .hello{
+        margin-top: -3vw;
+        padding: 3em 10em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .helloTow{
+        margin: 8em auto 20em;
+        padding: 3em 10em;
+        width: 85%;
+    }
+
+    .object {
+        width: 50%;
+        height: 100%;
+        padding: 2em;
+    }
+
+    .igloo > img {
+         /* margin: 1.4vw; */
+        width: 14vw;
+        object-fit: cover;
+        height: 10vw;
+    }
+
+    .little>p {
+        width: 50%;
+    }
+
+    .footerElement{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input {
+
+        height: 3em;
+    }
+
+    .inputItem {
+        height: 10em;
+    }
+
+    .rightScreenPosition {
+        margin: 1em 0 0 10vw;
+    }
+
+    .timer{
+        font-size:3vw;
+    }
+
+}
+
+/********************************* end-Media-Desktop *********************************/
+
+/********************************* KeyFrames *********************************/
+
+@keyframes tranlateAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scalAnim {
+    0% {
+        transform: scaleX(0);
+        transform-origin: 0% 0%;
+    }
+
+    100% {
+        transform: scaleX(1.5);
+        transform-origin: 0% 0%;
+    }
+}
+
+@keyframes ghost {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: scale(0);
+    }
+
+
+}
+
+@keyframes ghostRevenant {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 10;
+        transform: scale(1);
+    }
+
+
+}
+
+@keyframes FlanAnim {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes slideBtmAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideTopAnim {
+    0% {
+        opacity: 0;
+
+        transform: translateY(-250px) rotate(0.5turn);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0.5turn);
+    }
+}
